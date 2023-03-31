@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 100px; 
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+}
+.home-body {
+  padding-top: 0px; 
+  }
+                                                            /* PAGER */
+.pager li a {
+  color: rgb(0, 0, 0);
+}
+.pager li .active_link {
+  background: #7e7878ac;
+  color: aliceblue;
+}
+                                                 /* SUSSESS OR ERROR FORM DISPLAY */
+.succ-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.err-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p.p-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(81, 255, 0, 0.719);
+  font-weight: 700;
+  padding: 3px 0px;
+  border-radius: 5px;
+}
+p.p-danger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.719);
+  font-weight: 700;
+  padding: 3px 0px;
+  border-radius: 5px;
+}
+                                                     /* LOG FORM DISPLAY  */
+.drop-ul {
+  padding: 15px;
+  background-color: rgba(10, 10, 10, 0.719);
+}
+.log-form {
+  color: aliceblue;
+}
+.log-form p {
+  /* margin: 0; */
+padding: 0;
+align-items: center;
+text-align: center;
+}
+.log-btn {
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, 0.856);
+  animation: 2s ease-out;
+}
+.log-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(15, 14, 14, 0.856);
+  font-weight: 600;
+  animation: 2s ease-out;
+
+}
+
+                                                       /* COMMENT SECTION */
+ /* .comment-post {
+ display: block;
+ } */
+
+                                                        /* SEARCH DISPLAY */
+ .search-form {
+  width: 100%;
+  /* display: flex; */
+  margin: 0 0px 0 10px;
+}
+.search-bar {
+  width: 85%;
+  display: flex;
+  margin: 0 0px 0 15px;
+  top: 10px;
+}
+/* .search-form {
+  width: 90%;
+  display: flex;
+  margin: 0 0px 0 80px;
+}
+.search-bar {
+  width: 100%;
+  display: flex;
+  margin: 0 0px 0 0px;
+  top: -05px;
+} */
+.no-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55rem;
+}
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin: 0;
+  padding: 0 50px 0 50px;
+  height: 10rem;
+}
+                                                        /* HOME DISPLAY */
+
+.img-home-cont {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: -50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-home {
+  width: 100%;
+}
+div.title-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  padding: 50px;
+  top: 180px;
+  box-shadow: -12px 12px 2px 1px rgba(0, 0, 0, 0.6);
+}
+header h1{
+  font-size: 80px;
+  text-align: center;
+}
+header p {
+  font-size: 25px;
+  text-align: center;
+}
+div.title-box h1, header p, li {
+  font-family:  'kenia', 'cursive';
+}
+div.slider {
+  overflow: hidden;
+  align-items: center;
+}
+div.slides {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  animation: glisse 15s infinite ease;
+  width: calc(250px*4);
+  height: 600px;
+}
+div.slide {
+  opacity: 0.7;
+}
+@keyframes glisse{
+  0% {
+     transform: translateX(-800px);
+  }
+  33% {
+      transform: translateX(-400px);
+  }
+  
+  66% {
+      transform: translateX(-1600px);
+  }
+  100% {
+      transform: translateX(-800px);
+  }
+  
+}
+@media (max-width: 650px){
+.img-home-cont {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: -10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media (max-width: 500px){
+.img-home-cont {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media (max-width: 350px){
+.img-home-cont {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}

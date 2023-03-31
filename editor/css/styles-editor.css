@@ -1,0 +1,37 @@
+.bulkContainer {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.succ-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.err-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p.p-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(75, 223, 6, 0.596);
+  font-weight: 700;
+  padding: 3px 0px;
+  border-radius: 5px;
+}
+p.p-danger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.719);
+  font-weight: 700;
+  padding: 3px 0px;
+  border-radius: 5px;
+}
